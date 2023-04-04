@@ -9,7 +9,6 @@ import java.util.Collections;
 import java.util.List;
 
 import static com.turing.test.Meeting.scheduleMeetings;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * <h1>Description of the file</h1>

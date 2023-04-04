@@ -1,6 +1,9 @@
 package com.turing.test;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * <h1>Description of the file</h1>
@@ -27,7 +30,9 @@ public class MeetingScheduler {
             maxAttendees = Math.max(maxAttendees, meeting.size());
         }
 
-        MeetingSubset maxSubset = new MeetingSubset(new HashSet<>(){{add(meetings.get(0));}}, maxAttendees);
+        MeetingSubset maxSubset = new MeetingSubset(new HashSet<>() {{
+            add(meetings.get(0));
+        }}, maxAttendees);
 
         for (int i = 0; i < meetings.size(); i++) {
             List<Integer> currentMeeting = meetings.get(i);
